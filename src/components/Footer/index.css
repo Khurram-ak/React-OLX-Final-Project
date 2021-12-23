@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+#footer{
+    background-color: #EBEEEF;
+
+}
+h5{
+
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    padding-top: 18px;
+    height: 160px;
+}
+.footer{
+    height: 50px;
+    background-color:#002F34 ;
+    width: 90%;
+    color: white;
+    display:flex;
+    justify-content: flex-end;
+
+}
+.footerDiv,#span{
+    background-color:#002F34 ;
+
+}
+
+i{
+    padding: 6px;
+    color: black;
+    font-size: 18px;
+}
+.C1 h5{
+    padding-left: 5px;
+}

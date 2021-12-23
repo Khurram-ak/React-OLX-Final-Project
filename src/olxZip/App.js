@@ -1,6 +1,5 @@
 import './App.css';
 import Home from './screens/Home'
-import LogIn from './screens/LogIn'
 import AddPost from './screens/AddPost'
 import DetailPage from './screens/DetailPage'
 import { useState ,useEffect} from 'react';
@@ -18,8 +17,8 @@ function App() {
         data.push(doc.data())
         console.log(doc.data())
       })
+      setPostData(data)
     }
-    setPostData(data)
     dataFetch()
   }, [])
 
@@ -31,22 +30,10 @@ function App() {
   }
 
 
-  const[userLogged,setUserLogged]=useState(false)
-
-  const userLogIn=()=>{
-    setUserLogged(true)
-  }
-  
-  const logOut=()=>{
-    setUserLogged(false)
-  }
-
-
 
   return <>
 
-    {active == "Home"&& <Home redirect={redirect} userLogged={userLogged} postData={postData}  logOut={logOut}/>}
-    {active == "LogIn"&& <LogIn redirect={redirect} userLogIn={userLogIn} />}
+    {active == "Home"&& <Home redirect={redirect} postData={postData} />}
     {active == "AddPost"&&<AddPost redirect={redirect}/>}
     {active == "DetailPage"&&<DetailPage redirect={redirect} detailItem={detailItem} />}
   </>;

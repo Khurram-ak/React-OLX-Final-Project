@@ -1,0 +1,59 @@
+#navbar2{
+    background-color:#e9eeed;
+}
+button{
+    cursor: pointer;
+}
+.navbar2{
+    /* position: fixed;
+    top: 0px; */
+    margin-bottom: 40px;
+    display: flex;
+    padding: 18px;
+    width: 58%;
+    justify-content: space-between;
+}
+.navbar2 div{
+    padding-left: 10px;
+}
+#mainBox{
+    height: auto;
+    width: 60%;
+    margin: 70px auto;
+    border: 3px solid black;
+
+}
+.textDiv{
+    padding: 30px;
+    gap: 50%;
+    border-top: 2px solid black;
+    /* background-color: rgb(114, 110, 110); */
+}
+.textDiv2{
+    padding: 30px;
+    gap: 50%;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+.inputField{
+    width: 100%;
+    margin-top: 5px;
+    padding: 15px;
+}
+textarea{
+    width: 100%;
+
+    padding: 10px;
+}
+.postBtn{
+    background-color: #0C3433;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    font-family: "Roboto";
+    text-decoration: none;
+    border:none;
+    border-radius: 3px;
+    padding: 12px;
+}
